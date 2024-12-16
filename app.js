@@ -14,7 +14,7 @@ const databaseAndCollection = {db: process.env.MONGO_DB_NAME,
 
 app.set("views", path.resolve(__dirname, "/"));
 app.set("view engine", "ejs");
-app.get("/", (req, res) => res.render('index');
+app.get("/", (req, res) => res.render('index'));
 app.use(bodyParser.urlencoded({extended:false}));
 
 
